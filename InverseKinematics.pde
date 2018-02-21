@@ -2,7 +2,7 @@ float F = 50;
 float T = 70;
 float millisOld, gTime, gSpeed = 4;
 
-void IK() {
+void InverseKinematics() {
 
   float X = posX;
   float Y = posY;
@@ -23,7 +23,7 @@ void setTime() {
 }
 
 void writePos() {
-  IK();
+  InverseKinematics();
   setTime();
   posX = sin(gTime*PI/2)*20;
   posZ = sin(gTime*PI)*10;
